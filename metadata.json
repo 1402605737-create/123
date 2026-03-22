@@ -1,0 +1,7 @@
+{
+  "name": "The Botanical Atelier",
+  "description": "An AI-powered gardening assistant that identifies plants and provides expert care instructions using the 'Digital Atelier' aesthetic.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Newsreader", serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+  --font-label: "Plus Jakarta Sans", sans-serif;
+
+  --color-primary: #91472a;
+  --color-primary-container: #af5e3f;
+  --color-on-primary: #ffffff;
+  
+  --color-secondary: #526345;
+  --color-secondary-container: #d2e6c0;
+  --color-on-secondary-container: #566849;
+  
+  --color-tertiary: #006860;
+  --color-tertiary-container: #00837a;
+  
+  --color-surface: #fcf9f5;
+  --color-surface-container: #f0ede9;
+  --color-surface-container-low: #f6f3ef;
+  --color-surface-container-highest: #e5e2de;
+  
+  --color-on-surface: #1c1c1a;
+  --color-on-surface-variant: #54433d;
+  
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body antialiased;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-headline;
+  }
+  
+  .serif-italic {
+    @apply italic;
+  }
+}
+
+.glass {
+  background: rgba(252, 249, 245, 0.7);
+  backdrop-filter: blur(12px);
+}
+
+.shadow-soft {
+  box-shadow: 0 8px 24px rgba(28, 28, 26, 0.06);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
